@@ -14,13 +14,79 @@
             <RowDefinition Height="100" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+
+
         <Grid x:Name="AppTitleBar" Background="Transparent">
+
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*" />
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
-            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="2"/>
+
+            <Border Grid.Column="0" Background="#0092F6">
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Image
+                        Width="70"
+                        HorizontalAlignment="Left"
+                        Margin="30,0,0,0"
+                        Source="ms-appx:///Assets/JXlogopic.png" />
+                    <Image Height="60" Source="ms-appx:///Assets/JXtitle.png" />
+                </StackPanel>
+
+            </Border>
+            <!--  ="{StaticResource HarmonyOSSans}"  -->
+
+            <Border
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Background="#0092F6">
+                <StackPanel
+                    MinWidth="120"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center">
+                    <TextBlock
+                        Margin="50,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Stretch"
+                        CharacterSpacing="80"
+                        FontFamily="{StaticResource CN1}"
+                        FontSize="54"
+                        Foreground="#FFC9C9"
+                        Text="求真高2023级" />
+
+                </StackPanel>
+            </Border>
+
+
+            <Border
+                Grid.Column="2"
+                Background="#3FB1FF"
+                BorderBrush="#0092F6"
+                BorderThickness="0,0,0,0">
+                <StackPanel
+                    MinWidth="120"
+                    Margin="8"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    >
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Stretch"
+                        FontFamily="{StaticResource HarmonyOSSansBold}"
+                        FontSize="25"
+                        Foreground="White"
+                        Text="GitHub" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Stretch"
+                        FontFamily="{StaticResource HarmonyOSSans}"
+                        FontSize="16"
+                        Foreground="White"
+                        Text="Jame9703/Luck-UWP" />
+                </StackPanel>
+            </Border>
+
         </Grid>
         <control:FlipSide
             x:Name="FlipSide"
