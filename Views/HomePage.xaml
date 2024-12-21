@@ -113,6 +113,7 @@
                     classes:RippleHelper.RippleHelperState="Pressed"
                     Background="#FFC0F2BC"
                     Click="StartorStopButton_Click"
+                    CornerRadius="4"
                     Style="{StaticResource StartorStopButtonStyle}">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon x:Name="StartorStopButtonSymbolIcon" Symbol="Play" />

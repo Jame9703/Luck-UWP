@@ -6,7 +6,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:Luck"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     mc:Ignorable="d">
 
     <Grid>
@@ -14,26 +13,24 @@
             <RowDefinition Height="100" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
-
-        <Grid x:Name="AppTitleBar" Background="Transparent">
-
+        <Grid
+            x:Name="AppTitleBar"
+            Grid.Row="0"
+            Background="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="auto" />
                 <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
-
             <Border Grid.Column="0" Background="#0092F6">
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
                     <Image
                         Width="70"
-                        HorizontalAlignment="Left"
                         Margin="30,0,0,0"
-                        Source="ms-appx:///Assets/JXlogopic.png" />
-                    <Image Height="60" Source="ms-appx:///Assets/JXtitle.png" />
+                        HorizontalAlignment="Left"
+                        Source="ms-appx:///Photos/JXlogopic.png" />
+                    <Image Height="60" Source="ms-appx:///Photos/JXtitle.png" />
                 </StackPanel>
-
             </Border>
             <!--  ="{StaticResource HarmonyOSSans}"  -->
 
@@ -54,10 +51,8 @@
                         FontSize="54"
                         Foreground="#FFC9C9"
                         Text="求真高2023级" />
-
                 </StackPanel>
             </Border>
-
 
             <Border
                 Grid.Column="2"
@@ -68,12 +63,11 @@
                     MinWidth="120"
                     Margin="8"
                     HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
-                    >
+                    VerticalAlignment="Center">
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Stretch"
-                        FontFamily="{StaticResource HarmonyOSSansBold}"
+                        FontFamily="{StaticResource HarmonyOSSans}"
                         FontSize="25"
                         Foreground="White"
                         Text="GitHub" />
@@ -91,7 +85,7 @@
         <control:FlipSide
             x:Name="FlipSide"
             Grid.Row="1"
-            Margin="0,10,1,10">
+            Margin="0,0,1,0">
             <control:FlipSide.Side1>
                 <Frame x:Name="LoadingPageFrame" Background="#007acc" />
             </control:FlipSide.Side1>

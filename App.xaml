@@ -2,29 +2,24 @@
     x:Class="Luck.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     xmlns:local="using:Luck">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <!--<XamlControlsResources xmlns="using:Windows.UI.Xaml.Controls" />-->
-                <!--  Other merged dictionaries here  -->
+        <controls:XamlControlsResources>
+            <controls:XamlControlsResources.MergedDictionaries>
+                <!--  Other app resources here  -->
                 <ResourceDictionary>
-
-                    <FontFamily x:Key="HarmonyOSSans">ms-appx:///Assets/fonts/HarmonyOS_Sans_SC_Medium.ttf#HarmonyOS Sans SC</FontFamily>
-                    <FontFamily x:Key="HarmonyOSSansBlack">ms-appx:///Assets/fonts/HarmonyOS_Sans_SC_Black.ttf#HarmonyOS Sans SC</FontFamily>
-                    <FontFamily x:Key="HarmonyOSSansLight">ms-appx:///Assets/fonts/HarmonyOS_Sans_SC_Light.ttf#HarmonyOS Sans SC</FontFamily>
-                    <FontFamily x:Key="HarmonyOSSansThin">ms-appx:///Assets/fonts/HarmonyOS_Sans_SC_Thin.ttf#HarmonyOS Sans SC</FontFamily>
-                    <FontFamily x:Key="HarmonyOSSansBold">ms-appx:///Assets/fonts/HarmonyOS_Sans_SC_Bold.ttf#HarmonyOS Sans SC</FontFamily>
-
-                    <FontFamily x:Key="CN1">ms-appx:///Assets/fonts/HanYiXueJunTiJian-1.ttf#汉仪雪君体简</FontFamily>
-
-                    <Image x:Key="LogoPic" Source="ms-appx:///Assets/JXlogopic.png" />
-                    <Image x:Key="LogoTitle" Source="ms-appx:///Assets/JXtitle.png" />
-
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary>
+                            <FontFamily x:Key="HarmonyOSSans">ms-appx:///Fonts/HarmonyOS_Sans_SC_Medium.ttf#HarmonyOS Sans SC</FontFamily>
+                            <FontFamily x:Key="CN1">ms-appx:///Fonts/HanYiXueJunTiJian-1.ttf#汉仪雪君体简</FontFamily>
+                            <Image x:Key="LogoPic" Source="ms-appx:///Assets/JXlogopic.png" />
+                            <Image x:Key="LogoTitle" Source="ms-appx:///Assets/JXtitle.png" />
+                        </ResourceDictionary>
+                    </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
+            </controls:XamlControlsResources.MergedDictionaries>
+        </controls:XamlControlsResources>
 
-            </ResourceDictionary.MergedDictionaries>
-            <!--  Other app resources here  -->
-        </ResourceDictionary>
     </Application.Resources>
 </Application>
