@@ -25,9 +25,7 @@
         <control:FlipSide
             x:Name="FlipSide"
             Grid.Row="1"
-            Margin="132,65,200,225"
-            Height="1000"
-            Width="600">
+            Margin="0,10,1,10">
             <control:FlipSide.Side1>
                 <Frame x:Name="LoadingPageFrame" Background="#007acc" />
             </control:FlipSide.Side1>
