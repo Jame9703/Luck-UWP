@@ -54,10 +54,10 @@ namespace Luck
             if (!isScrolling)//未在滚动，本次点击按钮开始
             {
                 isScrolling = true;
-                StartorStopButton.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+                StartorStopButton.Background = new SolidColorBrush(Color.FromArgb(255, 192, 242, 188));
                 StartorStopButtonSymbolIcon.Symbol = Symbol.Stop;
                 StartorStopButtonTextBlock.Text = "停止";
-                //StartorStopButton.RippleHelper.RippleColor = Colors.Red;
+                RippleHelper.SetRippleColor(StartorStopButton,Colors.Yellow);
                 WinnerBorder.Visibility = Visibility.Collapsed;
                 scrollingTask = ScrollNamesAsync();
                 await scrollingTask;
@@ -67,7 +67,8 @@ namespace Luck
                 isScrolling = false;
                 StartorStopButton.Background = new SolidColorBrush(Color.FromArgb(255, 192, 242, 188));
                 StartorStopButtonSymbolIcon.Symbol = Symbol.Play;
-                StartorStopButtonTextBlock.Text = "停止";
+                StartorStopButtonTextBlock.Text = "开始";
+                RippleHelper.SetRippleColor(StartorStopButton, Colors.Green);
                 var winner = NameListBox.Items[NameListBox.SelectedIndex] as string;
                 WinnerTextBlock.Text = winner;
                 WinnerBorder.Visibility = Visibility.Visible;

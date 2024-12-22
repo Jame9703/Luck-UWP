@@ -96,12 +96,13 @@
             </Setter>
         </Style>
     </Page.Resources>
-    <Grid Background="Red">
+    <Grid >
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <ListBox
                 x:Name="NameListBox"
                 Width="200"
                 Height="200"
+                FontFamily="{StaticResource HarmonyOSSans}"
                 FontSize="20"
                 ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                 ScrollViewer.VerticalScrollBarVisibility="Hidden" />
@@ -117,7 +118,10 @@
                     Style="{StaticResource StartorStopButtonStyle}">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon x:Name="StartorStopButtonSymbolIcon" Symbol="Play" />
-                        <TextBlock x:Name="StartorStopButtonTextBlock" Text="开始" />
+                        <TextBlock
+                            x:Name="StartorStopButtonTextBlock"
+                            FontFamily="{StaticResource HarmonyOSSans}"
+                            Text="开始" />
                     </StackPanel>
                 </Button>
             </StackPanel>
