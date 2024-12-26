@@ -13,10 +13,33 @@
                         <ResourceDictionary>
                             <FontFamily x:Key="HarmonyOSSans">ms-appx:///Fonts/HarmonyOS_Sans_SC_Medium.ttf#HarmonyOS Sans SC</FontFamily>
                             <FontFamily x:Key="CN1">ms-appx:///Fonts/HanYiXueJunTiJian-1.ttf#汉仪雪君体简</FontFamily>
-                            <Image x:Key="LogoPic" Source="ms-appx:///Assets/JXlogopic.png" />
-                            <Image x:Key="LogoTitle" Source="ms-appx:///Assets/JXtitle.png" />
                         </ResourceDictionary>
                     </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <!--  定义浅色主题资源  -->
+                            <SolidColorBrush x:Key="MyBrush" Color="Yellow" />
+                            <SolidColorBrush
+                                x:Key="GridBackground"
+                                Opacity="0.6"
+                                Color="White" />
+                            <SolidColorBrush x:Key="LineNumberForeground" Color="#E42B91AF" />
+                            <Color x:Key="ButtonForegroundColor">Green</Color>
+
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Dark">
+                            <!--  定义深色主题资源  -->
+                            <SolidColorBrush x:Key="MyBrush" Color="Green" />
+                            <SolidColorBrush
+                                x:Key="GridBackground"
+                                Opacity="0.2"
+                                Color="Black" />
+                            <SolidColorBrush x:Key="LineNumberForeground" Color="#E4858585" />
+                            <Color x:Key="ButtonForegroundColor">yellow</Color>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
                 </ResourceDictionary>
             </controls:XamlControlsResources.MergedDictionaries>
         </controls:XamlControlsResources>

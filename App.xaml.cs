@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.ViewManagement;
@@ -17,6 +18,7 @@ namespace Luck
         /// 初始化单一实例应用程序对象。这是执行的创作代码的第一行，
         /// 已执行，逻辑上等同于 main() 或 WinMain()。
         /// </summary>
+         public static  ObservableCollection<Student> NamesList { get; set; } = new ObservableCollection<Student>();
         public App()
         {
             this.InitializeComponent();
